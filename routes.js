@@ -14,6 +14,7 @@ router.get('/verbs/:artist/:title', async (ctx) => {
       verbs: verbs
     }
   } catch (err) {
+    console.log(err)
     ctx.status = 500
     ctx.body = 'An error occurred please try again after some time'
   }
@@ -27,6 +28,7 @@ router.get('/adjectives/:artist/:title', async (ctx) => {
       adjectives: adjectives
     }
   } catch (err) {
+    console.log(err)
     ctx.status = 500
     ctx.body = 'An error occurred please try again after some time'
   }
