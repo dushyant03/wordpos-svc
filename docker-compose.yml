@@ -2,7 +2,7 @@ version: '3'
 
 services:
   wordpos-svc:
-    image: dushyant03/nodejs
+    image: dushyant03/wordpos-svc
     environment:
       - BASE_PATH=lyrics-svc:8080
     ports:
@@ -11,7 +11,7 @@ services:
       - lyrics-svc:lyrics-svc
 
   lyrics-svc:
-    image: dushyant03/lyrics.ovh
+    image: dushyant03/lyrics-svc
     expose:
       - "8080" 
       - "8081"
